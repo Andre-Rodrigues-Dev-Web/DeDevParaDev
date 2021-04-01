@@ -1,0 +1,20 @@
+.form_pesquisar{
+    width: 90%;
+}
+.form_pesquisar .container_input{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.form_pesquisar .container_input input{
+    padding: 10px 8px;
+    width: 70%;
+}
+.form_pesquisar .container_input button{
+    padding: 7.8px 10px;
+}
+@media(min-width: 600px){
+    .form_pesquisar{
+        width: 100%;
+    }
+}

@@ -1,0 +1,82 @@
+.topo{
+    background-color: #E80C7A;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+.topo .container_topo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.topo .container_topoa .logo{
+    width: 20%;
+}
+.topo .container_topo .logo > img{
+    width: 70%;
+}
+.container_responsive .button_responsive{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 12px;
+    width: 40px;
+}
+.button_responsive div{
+    position: relative;
+}
+.container_responsive .button_responsive div,
+.container_responsive .button_responsive div::after,
+.container_responsive .button_responsive div::before{
+    background-color: #333;
+    height: 5px;
+    width: 30px;
+}
+.container_responsive .button_responsive div::after,
+.container_responsive .button_responsive div::before{
+    position: absolute;
+    left: 0;
+    content: "";
+
+}
+.container_responsive .button_responsive div::after{
+    top: -9px;
+}
+.container_responsive .button_responsive div::before{
+    bottom: -9px;
+}
+.links_topo{
+    display: none;
+}
+.links_topo li{
+    padding: 10px 20px;
+}
+.links_topo li a{
+    color: #fff;
+    font-weight:600;
+}
+/*Midias queryes*/
+
+@media(min-width: 600px){
+    .topo .container_topo{
+        padding: 1rem 1.2rem;
+    }
+    .topo .container_topo .logo{
+        width: 24%;
+    }
+    .topo .container_topo .logo > img{
+        width: 80%;
+    }
+    .container_responsive{
+        display: none;
+    }
+    .links_topo{
+        display: block;
+    }
+    .links_topo li{
+        display: inline;
+    }
+}

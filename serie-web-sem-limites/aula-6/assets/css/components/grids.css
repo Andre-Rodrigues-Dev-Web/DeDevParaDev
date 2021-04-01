@@ -1,0 +1,21 @@
+.container{
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 98%;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+/*Last Desktop*/
+
+@media(min-width: 600px){
+    .container{
+        width: 80%;
+    }
+    .col-4{width: 33.33%;}
+    .col-6{width: 50%;}
+    .row{
+        flex-direction: row;
+    }
+}
